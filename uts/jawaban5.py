@@ -1,4 +1,11 @@
-def jualan():
+def nama():
+    nim = 20210801052
+    nama ="Dian syamdova"
+    print("NIM :",nim)
+    print("NAMA :",nama)
+    print("=====================")
+
+def menu():
     a = "capucino"
     b = "teh"
     print ("Pilihan")
@@ -11,26 +18,23 @@ def capucino():
     print(cap)
     capucino = int(input("masukkan harga : "))
     ppn = 10/100
-    total = capucino*ppn
-    print(total)
+    pajak = capucino*ppn
+    total = capucino+pajak
+    print("jumlah yang harus dibayar : ",total)
+    
 
 def teh():
     teh = "memilih TEH"
     print(teh)
     teh = int(input("masukkan harga : "))
     ppn = 10/100
-    total = teh*ppn
-    print(total)
-
-def welcome():
-    nim = 1234567
-    nama = "QWERTY"
-    print ("NIM : ", nim)
-    print ("NAMA : ", nama)
+    pajak = teh*ppn
+    total = teh+pajak
+    print("jumlah yang harus dibayar : ",total)
 
 while True:
-    welcome()
-    jualan()
+    nama()
+    menu()
     pil = int(input("masukkan pilihan : "))
     if pil == 1:
         capucino()
